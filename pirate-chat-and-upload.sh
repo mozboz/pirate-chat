@@ -4,10 +4,7 @@
 # --- Config
 
 # Directory to store/serve files from. Probably better to change this to absolute path!
-FILE_FOLDER="filestore"
-
-# Directory of chat server program files
-CHAT_SERVER="chat-www"
+FILE_FOLDER="file-server/filestore"
 
 IMAGE="droopy/piratebox-logo-small.png"
 
