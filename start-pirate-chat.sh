@@ -26,13 +26,13 @@ DROOPY_INCLUDE="$FORUM_LINK_HTML <br /> $CHAT_BOX_HTML"
 
 ## Start chat server
 ./chat-server.sh &
-echo $!
+echo $! > chat.pid
 
 ## Start file server
 ./file-server.sh &
-echo $!
+echo $! > file.pid
 
 ## Start droopy
 python droopy.py -d $FILE_FOLDER -p $IMAGE -m "$TEXT"  -c "$DROOPY_INCLUDE" &
-echo $!
+echo $! > droopy.pid
 
