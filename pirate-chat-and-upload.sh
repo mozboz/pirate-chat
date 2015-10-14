@@ -9,7 +9,7 @@ FILE_FOLDER="filestore"
 # Directory of chat server program files
 CHAT_SERVER="chat-www"
 
-IMAGE="piratebox-logo-small.png"
+IMAGE="droopy/piratebox-logo-small.png"
 
 HOST="localhost"
 
@@ -28,11 +28,11 @@ FORUM_LINK_HTML=""
 DROOPY_INCLUDE="$FORUM_LINK_HTML <br /> $CHAT_BOX_HTML"
 
 ## Start chat server
-./chat-server.sh $CHAT_SERVER &
+./chat-server.sh &
 echo $!
 
 ## Start file server
-./file-server.sh $FILE_FOLDER &
+./file-server.sh &
 echo $!
 
 ## Start droopy
